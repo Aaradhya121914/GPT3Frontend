@@ -1,0 +1,132 @@
+.GPT3_Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2 rem 6rem;
+   
+}
+
+.GPT3_Navbar-Links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+.GPT3_Navbar-Links_logo{
+  /* margin syntax:top right bottom left */
+    margin: 2rem 2rem 0 2rem;
+}
+
+.GPT3_Navbar-Links_logo img{
+    width: 62.56px;
+    height: 16.02px;
+    cursor:pointer;
+}
+
+.GPT3_Navbar-Links_container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.GPT3_Navbar-Sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 2rem 2rem 0 2rem;
+}
+
+.GPT3_Navbar-Links_container p,.GPT3_Navbar-Sign p,.GPT3_Navbar-Menu_Container p{
+color: #fff;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+text-transform: capitalize;
+margin: 0 1rem;
+cursor: pointer;
+}
+
+.GPT3_Navbar-Sign button,.GPT3_Navbar-Menu_Container button{
+   padding: 0.5rem 1rem;
+   color: #fff;
+   font-family: var(--font-family);
+   font-weight: 500;
+   background-color: #FF4820;
+   border-radius: 5px; 
+   font-size: 18px;
+   line-height: 25px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+.GPT3_Navbar-Menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+.GPT3_Navbar-Menu svg{
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.GPT3_Navbar-Menu_Container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow:0 0 5 rgba(0,0,0,0.2) ;
+}
+
+.GPT3_Navbar-Menu_Container p{
+    margin: 1rem 0;
+}
+
+.GPT3_Navbar-Menu_Container_Links-Sign{
+display: none;
+}
+
+@media screen and (max-width:1050px){
+    .GPT3_Navbar-Links_container{
+        display: none;
+    }
+
+    .GPT3_Navbar-Menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:700px){
+    .GPT3_Navbar{
+       padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width:550px){
+    .GPT3_Navbar{
+       padding: 2rem;
+    }
+
+    .GPT3_Navbar-Sign{
+        display: none;
+    }
+    
+    .GPT3_Navbar-Menu_Container{
+      top: 28px;
+    }
+
+    .GPT3_Navbar-Menu_Container_Links-Sign{
+        display: block;
+    }
+}
